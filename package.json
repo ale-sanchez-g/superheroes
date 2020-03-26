@@ -7,7 +7,7 @@
     "node": "10.x"
   },
   "scripts": {
-    "start": "node app/heroes.js 8080",
+    "start": "node app/heroes.js $PORT",
     "test": "node_modules/.bin/newman run app/test/superheroes.postman_collection.json"
   },
   "keywords": [],

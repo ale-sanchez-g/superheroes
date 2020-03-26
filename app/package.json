@@ -1,0 +1,20 @@
+{
+  "name": "superheroes",
+  "version": "1.0.0",
+  "description": "",
+  "main": "heroes.js",
+  "scripts": {
+    "start": "node heroes.js 8080",
+    "test": "node_modules/.bin/newman run test/superheroes.postman_collection.json"
+  },
+  "keywords": [],
+  "author": "alejandro sanchez giraldo",
+  "license": "MIT",
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.4"
+  },
+  "devDependencies": {
+    "newman": "^4.6.0"
+  }
+}

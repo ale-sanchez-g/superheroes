@@ -4,8 +4,8 @@
   "description": "",
   "main": "heroes.js",
   "scripts": {
-    "start": "node heroes.js 8080",
-    "test": "node_modules/.bin/newman run test/superheroes.postman_collection.json"
+    "start": "node app/heroes.js 8080",
+    "test": "node_modules/.bin/newman run app/test/superheroes.postman_collection.json"
   },
   "keywords": [],
   "author": "alejandro sanchez giraldo",

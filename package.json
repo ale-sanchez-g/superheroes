@@ -3,6 +3,9 @@
   "version": "1.0.0",
   "description": "",
   "main": "heroes.js",
+  "engines": {
+    "node": "10.x"
+  },
   "scripts": {
     "start": "node app/heroes.js 8080",
     "test": "node_modules/.bin/newman run app/test/superheroes.postman_collection.json"

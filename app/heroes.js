@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const bodyParser = require('body-parser');
 
 const port = process.argv.slice(2)[0];
@@ -42,6 +43,8 @@ app.get('/heroes', (req, res) => {
    console.log('Returning heroes list');
    res.send(heroes);
 });
+  
+app.use('/img', express.static(path.join(__dirname,'img')));
 
 console.log(`Heroes service listening on port ${port}`);
 app.listen(port);

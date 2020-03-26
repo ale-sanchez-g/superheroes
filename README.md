@@ -4,6 +4,7 @@ List of super heroes, powers and scores
 ## Endpoints
 
 GET /heroes
+GET /img/<imageTitle>.jpg
 
 array with list of heroes
 

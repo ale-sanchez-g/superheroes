@@ -8,7 +8,9 @@
   },
   "scripts": {
     "start": "node app/heroes.js $PORT",
-    "test": "node_modules/.bin/newman run app/test/superheroes.postman_collection.json"
+    "test": "node_modules/.bin/newman --env-var 'url=http://localhost:3000' run app/test/superheroes.postman_collection.json",
+    "e2etest": "node_modules/.bin/newman --env-var 'url=https://covid19superheroes.herokuapp.com/' run app/test/superheroes.postman_collection.json"
+
   },
   "keywords": [],
   "author": "alejandro sanchez giraldo",

@@ -13,13 +13,49 @@
 					"script": {
 						"id": "6b2e7db2-0d35-44d2-9d5a-fa4fc7c8e5a0",
 						"exec": [
+							"var jsonData = pm.response.json();",
+							"var schema = {",
+							"        \"type\": \"array\",",
+							"        \"items\": { \"$ref\": \"#/definitions/heros\" },",
+							"          \"definitions\": {",
+							"              \"heros\": {",
+							"                \"type\": \"object\",",
+							"                \"required\": [ \"id\", \"type\", \"displayName\", \"img\" ],",
+							"                \"properties\": {",
+							"                    \"id\": {",
+							"                        \"type\": \"integer\",",
+							"                        \"description\": \"The id of the hero.\"",
+							"                    },",
+							"                    \"type\": {",
+							"                        \"type\": \"string\",",
+							"                        \"description\": \"Hero type.\"",
+							"                    },",
+							"                    \"displayName\": {",
+							"                        \"type\": \"string\",",
+							"                        \"description\": \"Hero display name.\"",
+							"                    },  ",
+							"                    \"img\": {",
+							"                        \"type\": \"string\",",
+							"                        \"description\": \"Hero allocated image.\"",
+							"                    },                    ",
+							"                }",
+							"              }",
+							"          }",
+							"    };",
+							"    ",
 							"pm.test(\"List of super heroes\", function () {",
-							"    var jsonData = pm.response.json();",
 							"    pm.expect(jsonData[0].type).to.eql(\"handWasher\");",
 							"    pm.expect(jsonData[1].type).to.eql(\"social-distance\");",
 							"    pm.expect(jsonData[2].type).to.eql(\"soap\");",
 							"    pm.expect(jsonData[3].type).to.eql(\"working-from-home\");",
+							"});",
 							"",
+							"pm.test('Schema is valid', function() {",
+							"  pm.expect(tv4.validate(jsonData, schema)).to.be.true;",
+							"});",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
 							"});"
 						],
 						"type": "text/javascript"
@@ -30,11 +66,10 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "localhost:8080/heroes",
+					"raw": "{{url}}/heroes",
 					"host": [
-						"localhost"
+						"{{url}}"
 					],
-					"port": "8080",
 					"path": [
 						"heroes"
 					]

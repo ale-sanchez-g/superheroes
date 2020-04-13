@@ -1,8 +1,8 @@
 const express = require('express');
-const path = require('path');
 const bodyParser = require('body-parser');
-const office = require('./battlefield/office');
-const port = process.argv.slice(2)[0];
+
+let port =process.env.PORT || 3000;
+
 const app = express();
 app.use(bodyParser.json());
 
@@ -19,11 +19,6 @@ app.get('/', (req, res) => {
     console.log('simple info on how to use the API');
     res.send(battlefields);
  });
-
-// app.get('/office', (req, res) => {
-//    console.log('Returning office questions');
-//    res.send(office);
-// });
   
 battlefields.forEach(function(battle){
     const place = require('./battlefield/'+battle.place);

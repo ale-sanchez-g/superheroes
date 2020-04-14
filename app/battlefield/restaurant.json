@@ -1,0 +1,9 @@
+{
+    "question": "You and your partner want to have a nice dinner for your 10th wedding anniversary?",
+    "answer1": "Book a nice hotel, and go to the restaurant there. Make sure you clean your hands regulary.",
+    "answer2": "Order a nice local takeaway, dress up for the occation and enjoy each others company",
+    "solution": {
+        "correctAnswer": "Order a nice local takeaway, dress up for the occation and enjoy each others company",
+        "score": 100
+    }
+}

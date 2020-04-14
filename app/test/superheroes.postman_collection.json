@@ -6,7 +6,7 @@
 	},
 	"item": [
 		{
-			"name": "List of superheroes",
+			"name": "battlefields",
 			"event": [
 				{
 					"listen": "test",
@@ -16,38 +16,26 @@
 							"var jsonData = pm.response.json();",
 							"var schema = {",
 							"        \"type\": \"array\",",
-							"        \"items\": { \"$ref\": \"#/definitions/heros\" },",
+							"        \"items\": { \"$ref\": \"#/definitions/battlefiels\" },",
 							"          \"definitions\": {",
-							"              \"heros\": {",
+							"              \"battlefiels\": {",
 							"                \"type\": \"object\",",
-							"                \"required\": [ \"id\", \"type\", \"displayName\", \"img\" ],",
+							"                \"required\": [ \"place\"],",
 							"                \"properties\": {",
-							"                    \"id\": {",
-							"                        \"type\": \"integer\",",
-							"                        \"description\": \"The id of the hero.\"",
-							"                    },",
-							"                    \"type\": {",
+							"                    \"place\": {",
 							"                        \"type\": \"string\",",
-							"                        \"description\": \"Hero type.\"",
-							"                    },",
-							"                    \"displayName\": {",
-							"                        \"type\": \"string\",",
-							"                        \"description\": \"Hero display name.\"",
-							"                    },  ",
-							"                    \"img\": {",
-							"                        \"type\": \"string\",",
-							"                        \"description\": \"Hero allocated image.\"",
+							"                        \"description\": \"Place where the battles take place\"",
 							"                    },                    ",
 							"                }",
 							"              }",
 							"          }",
 							"    };",
 							"    ",
-							"pm.test(\"List of super heroes\", function () {",
-							"    pm.expect(jsonData[0].type).to.eql(\"handWasher\");",
-							"    pm.expect(jsonData[1].type).to.eql(\"social-distance\");",
-							"    pm.expect(jsonData[2].type).to.eql(\"soap\");",
-							"    pm.expect(jsonData[3].type).to.eql(\"working-from-home\");",
+							"pm.test(\"List of battlefields\", function () {",
+							"    pm.expect(jsonData[0].place).to.eql(\"office\");",
+							"    pm.expect(jsonData[1].place).to.eql(\"bus\");",
+							"    pm.expect(jsonData[2].place).to.eql(\"restaurant\");",
+							"    pm.expect(jsonData[3].place).to.eql(\"library\");",
 							"});",
 							"",
 							"pm.test('Schema is valid', function() {",
@@ -66,12 +54,176 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/heroes",
+					"raw": "{{url}}/",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
-						"heroes"
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "office",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6b2e7db2-0d35-44d2-9d5a-fa4fc7c8e5a0",
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"    ",
+							"pm.test(\"Question data\", function () {",
+							"    pm.expect(jsonData.question).not.to.eql(\"\");",
+							"    pm.expect(jsonData.answer1).not.to.eql(\"\");",
+							"    pm.expect(jsonData.answer2).not.to.eql(\"\");",
+							"    pm.expect(jsonData.solution.correctAnswer).not.to.eql(\"\");",
+							"    pm.expect(jsonData.solution.score).to.eql(100);",
+							"});",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/office",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"office"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "bus",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6b2e7db2-0d35-44d2-9d5a-fa4fc7c8e5a0",
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"    ",
+							"pm.test(\"Question data\", function () {",
+							"    pm.expect(jsonData.question).not.to.eql(\"\");",
+							"    pm.expect(jsonData.answer1).not.to.eql(\"\");",
+							"    pm.expect(jsonData.answer2).not.to.eql(\"\");",
+							"    pm.expect(jsonData.solution.correctAnswer).not.to.eql(\"\");",
+							"    pm.expect(jsonData.solution.score).to.eql(100);",
+							"});",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/bus",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"bus"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "restaurant",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6b2e7db2-0d35-44d2-9d5a-fa4fc7c8e5a0",
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"    ",
+							"pm.test(\"Question data\", function () {",
+							"    pm.expect(jsonData.question).not.to.eql(\"\");",
+							"    pm.expect(jsonData.answer1).not.to.eql(\"\");",
+							"    pm.expect(jsonData.answer2).not.to.eql(\"\");",
+							"    pm.expect(jsonData.solution.correctAnswer).not.to.eql(\"\");",
+							"    pm.expect(jsonData.solution.score).to.eql(100);",
+							"});",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/restaurant",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"restaurant"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "library",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6b2e7db2-0d35-44d2-9d5a-fa4fc7c8e5a0",
+						"exec": [
+							"var jsonData = pm.response.json();",
+							"    ",
+							"pm.test(\"Question data\", function () {",
+							"    pm.expect(jsonData.question).not.to.eql(\"\");",
+							"    pm.expect(jsonData.answer1).not.to.eql(\"\");",
+							"    pm.expect(jsonData.answer2).not.to.eql(\"\");",
+							"    pm.expect(jsonData.solution.correctAnswer).not.to.eql(\"\");",
+							"    pm.expect(jsonData.solution.score).to.eql(100);",
+							"});",
+							"",
+							"pm.test(\"Status code is 200\", function () {",
+							"    pm.response.to.have.status(200);",
+							"});"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{url}}/library",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"library"
 					]
 				}
 			},

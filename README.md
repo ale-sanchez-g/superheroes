@@ -1,17 +1,22 @@
 # superheroes
-List of super heroes, powers and scores
+
+This repository will hold the questions and answers that will be presented in the battlefield, with the relevant scores.
+
+No player data will be stored in this repository
 
 ## Endpoints
 
-GET /heroes
-GET /img/<imageTitle>.jpg
+Example:
 
-array with list of heroes
+/office
+/bus
+/restaurant
+/library
 
 ## Steps
 
 - npm install
-- PORT:8080 npm start
+- PORT:3000 npm start
 
 ## Test
 

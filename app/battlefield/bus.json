@@ -1,9 +1,29 @@
-{
-    "question": "A passanger, is constantly coughing in the bus, what do you do?",
-    "answer1": "Use your superheroes Mask and sanitaiser while traveling on public transport and clean your hads regulary.",
-    "answer2": "Keep it to yourself, do not draw attention, and pretend you did not notice!",
-    "solution": {
-        "correctAnswer": "Use your superheroes Mask and sanitaiser while traveling on public transport and clean your hads regulary.",
-        "score": 100
+[
+    {
+        "question": "You must travel to buy food and medical supplies?",
+        "answer1": "Use your superheroes Mask and sanitaiser while traveling on public transport and clean your hads regulary.",
+        "answer2": "Please consider travelling during peak times, when more help is available to you",
+        "solution": {
+            "correctAnswer": "Use your superheroes Mask and sanitaiser while traveling on public transport and clean your hads regulary.",
+            "score": 100
+        }
+    },
+    {
+        "question": "Someone sits next you, and is begining to cough, what do you do?",
+        "answer1": "User your superheroes 'Punch' and keep it to yourself",
+        "answer2": "Move to another sit immediately and report it to the driver!",
+        "solution": {
+            "correctAnswer": "Move to another sit immediately and report it to the driver!",
+            "score": 90
+        }
+    },
+    {
+        "question": "You must travel to buy food and medical supplies?",
+        "answer1": "Cover any sneezes or coughs with your superhero 'inner elbow' or with a tissue that is then discarded.",
+        "answer2": "Cover any sneezes or coughs with your hand and clean it under the sit where no one will notice.",
+        "solution": {
+            "correctAnswer": "Cover any sneezes or coughs with your superhero 'inner elbow' or with a tissue that is then discarded.",
+            "score": 80
+        }
     }
-}
+]

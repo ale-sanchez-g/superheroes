@@ -1,9 +1,29 @@
-{
-    "question": "The kids need to do some reasearch in the library?",
+[
+    {
+    "question": "The kids need to do some research in the library?",
     "answer1": "Go to the library and get as many books as yo need before is too late.",
     "answer2": "Do some online research, and check for reputable online sources!",
     "solution": {
-        "correctAnswer": "User your superheroe 'Distance' and keep it to yourself",
+        "correctAnswer": "Do some online research, and check for reputable online sources!",
         "score": 100
     }
-}
+    },
+    {
+        "question": "The librarian handles the books needed for research and issues them to the kids",
+        "answer1": "Pick up the books and start researching .",
+        "answer2": "Kids should keep the social distance while picking up the books!",
+        "solution": {
+            "correctAnswer": "Kids should keep the social distance while picking up the books!",
+            "score": 90
+        }
+    },
+    {
+        "question": "The kids start reading the book in the library?",
+        "answer1": "Make sure the book and the seating area is wiped clean using alcohol wipes",
+        "answer2": "Find the available seating area and start researching",
+        "solution": {
+            "correctAnswer": "Make sure the book and the seating area is wiped clean using alcohol wipes ",
+            "score": 80
+        }
+    }
+]

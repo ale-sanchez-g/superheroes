@@ -28,7 +28,7 @@ battlefields.forEach(function(battle){
   });
 
 battlefields.forEach(function(battle){
-    const place = require('./battlefield/v2'+battle.place);
+    const place = require('./battlefield/v2/'+battle.place);
     app.get(`/api/v2/${battle.place}`, (req, res) => {
         console.log(`Returning ${battle.place} questions`);
         res.send(place);

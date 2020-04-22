@@ -14,7 +14,7 @@ const battlefields = [
         {place:"library"},
 ];
 
-app.get('/', function (req, res) {
+get('/', function (req, res) {
     res.send(app.battlefields)
 })
 

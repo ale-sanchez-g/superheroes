@@ -14,11 +14,10 @@ const battlefields = [
         {place:"library"},
 ];
 
-app.get('/', (req, res) => {
-    // I want to add Swagger in the home page
-    console.log('simple info on how to use the API');
-    res.send(battlefields);
- });
+app.get('/', function (req, res) {
+    res.send(app.battlefields)
+})
+
   
 battlefields.forEach(function(battle){
     const place = require('./battlefield/'+battle.place);
@@ -28,6 +27,14 @@ battlefields.forEach(function(battle){
      });
   });
 
+battlefields.forEach(function(battle){
+    const place = require('./battlefield/v2'+battle.place);
+    app.get(`/api/v2/${battle.place}`, (req, res) => {
+        console.log(`Returning ${battle.place} questions`);
+        res.send(place);
+    });
+});
 
-console.log(`Heroes service listening on port ${port}`);
+
+console.log(`Covid Heroes service listening on port ${port}`);
 app.listen(port);

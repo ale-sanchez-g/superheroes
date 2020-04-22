@@ -1,0 +1,32 @@
+[
+    {
+        "id": "lib_1",
+        "question": "The kids need to do some research in the local library, you notice social isolation is in place, what do you do?",
+        "answer1": "Go to the library and get as many books as yo need before is too late.",
+        "answer2": "Do some online research, and check for reputable online sources instead!",
+        "solution": {
+            "correctAnswer": "Do some online research, and check for reputable online instead!",
+            "score": 100
+    }
+    },
+    {   
+        "id": "lib_2",
+        "question": "The librarian handling the books in the counter looks very ill, and is issuing bookes to all kids, what do you do?",
+        "answer1": "Let the kids pick up the books and start researching.",
+        "answer2": "Kids should keep the social distance while picking up the books!",
+        "solution": {
+            "correctAnswer": "Kids should keep the social distance while picking up the books!",
+            "score": 90
+        }
+    },
+    {   
+        "id": "lib_3",
+        "question": "The library is very full today, and someone on the table looks ill, what do you do?",
+        "answer1": "Make sure the book and the seating area is wiped clean using alcohol wipes",
+        "answer2": "Stay available seating area and start researching",
+        "solution": {
+            "correctAnswer": "Make sure the book and the seating area is wiped clean using alcohol wipes ",
+            "score": 80
+        }
+    }
+]

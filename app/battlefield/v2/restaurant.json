@@ -1,18 +1,18 @@
 [
     {
         "id": "res_1",
-        "question": "You notice people siting next to each otherin a restaurant, what do you do?",
-        "answer1:": "User your superheroes 'Sanitizer', keep a safe distance and ask them to remain at home",
-        "answer2:": "move away immediately and report it to the Driver!",
+        "question": "You notice a large group of people waiting in line next to each other at a restaurant, what do you do?",
+        "answer1:": "Use your super hero sanitizer, keep a safe distance and advise they should keep 1.5 metres away from others.",
+        "answer2:": "move away immediately call the police!",
         "solution": {
-            "correctAnswer": "move away immediately and report it to the Driver!",
+            "correctAnswer": "Use your super hero sanitizer, keep a safe distance and advise they should keep 1.5 metres away from others.",
             "score": 100
         }
     },
     {
         "id": "res_2",
-        "question": "You notice one of the waiters serving food is Ill and handling orders at a restaurant, what do you do?",
-        "answer1": "Ignore the signs of 'Social Waiting', and remain oblivious or the situatione",
+        "question": "You notice one of the waiters serving food is ill and handling orders at a restaurant, what do you do?",
+        "answer1": "Ignore the signs, and remain oblivious or the situation",
         "answer2": "Use reasonable logic, keep distance from the waiter and report it to management!",
         "solution": {
             "correctAnswer": "Use reasonable logic, keep distance from the waiter and report it to management!",
@@ -22,11 +22,13 @@
     {
         "id": "res_3",
         "question": "You notice the people at the bar are re-using shot glasses for a group round of drinks, what do you do?",
-        "answer1": "Approach the Group as it seems 'Fun', and partake in the social festivities",
+        "answer1": "Approach the Group as it seems Fun, and partake in the social festivities",
         "answer2": "Do not ignore the sign of possible contamination and report it to Management.",
         "solution": {
             "correctAnswer": "Do not ignore the sign of possible contamination and report it to Management.",
             "score": 80
         }
     }
-]
+ ]
+ 
+ 

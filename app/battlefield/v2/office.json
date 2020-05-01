@@ -1,32 +1,34 @@
 [
     {
         "id": "off_1",
-        "question": "Marcus, your coworker, is constantly coughing in the office, what do you do?",
-        "answer1": "Use your superheroe Social Distance, notify your Manager and maintain a safe distance.",
+        "question": "Your coworker Markus, is constantly coughing in the office, what do you do?",
+        "answer1": "Use your superhero Social Distance and notify your Manager.",
         "answer2": "Keep it to yourself, do not draw attention, and pretend you did not notice!",
         "solution": {
-            "correctAnswer": "Use your superheroe Social Distance, notify your Manager and maintain a safe distance.",
+            "correctAnswer": "Use your superhero Social Distance and notify your Manager.",
             "score": 100
         }
     },
     {
         "id": "off_2",
-        "question": "Mary from HR, send a memo advising she is ill and everyone should reach her via email only, what do you do?",
-        "answer1": "Use your superheroe Social Distancing, notify your Manager and recomend to her staying at home.",
-        "answer2": "Ignore the risk, email Mary only if neccessary and go on with your own work!",
+        "question": "Mary from HR, send a memo advising she is ill and everyone should reach her via email, what do you do?",
+        "answer1": "Use your superhero Social Distancing, notify your Manager and recommend she should be working from home.",
+        "answer2": "Email Mary to see if she needs some help, and bring her a nice warm cup of tea, so she can feel better!",
         "solution": {
-            "correctAnswer": "Use your superheroe Social Distancing, notify your Manager and recomend to her staying at home.",
+            "correctAnswer": "Use your superhero Social Distancing, notify your Manager and recommend she should be working from home.",
             "score": 90
         }
     },
     {
         "id": "off_3",
-        "question": "Alex, your Manager, tells you his partner recently came back from overseas recently, and is seen constantly sneezing during the day, what do you do?",
+        "question": "Your Manager Alex, tells you his partner recently came back from overseas, and is seen constantly sneezing during the day, what do you do?",
         "answer1": "Comfort your Manager, and assure him it is only natural to have a seasonal cold this time of the year.",
-        "answer2": "Use your superheroe Social Distance, advise your Manager of the pertaining risk and maintain a safe distance.",
+        "answer2": "Use your superhero Social Distance, advise your Manager of the risk and that his partner should be seeking medical advice.",
         "solution": {
-            "correctAnswer": "Use your superheroe Social Distance, advise your Manager of the pertaining risk and maintain a safe distance.",
+            "correctAnswer": "Use your superhero Social Distance, advise your Manager of the risk and that his partner should be seeking medical advice.",
             "score": 80
         }
     }
-]
+ ]
+ 
+ 

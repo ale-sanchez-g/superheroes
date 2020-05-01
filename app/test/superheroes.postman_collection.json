@@ -52,7 +52,19 @@
 			],
 			"request": {
 				"method": "GET",
-				"header": [],
+				"header": [
+					{
+						"key": "Authorisation",
+						"value": "local_key",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "",
+						"type": "text",
+						"disabled": true
+					}
+				],
 				"url": {
 					"raw": "{{url}}",
 					"host": [

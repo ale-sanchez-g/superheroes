@@ -1,7 +1,9 @@
 const express = require('express');
 const bodyParser = require('body-parser');
 
-let port =process.env.PORT || 3000;
+let port = process.env.PORT || 3000;
+let key = process.env.AUTH_KEY || "local_key";
+
 
 const app = express();
 app.use(bodyParser.json());
@@ -15,7 +17,12 @@ const battlefields = [
 ];
 
 app.get('/', function (req, res) {
-    res.send(battlefields)
+    if (req.get('Authorization') == key ) {
+        res.send(battlefields)
+       } else {
+        res.status(401)
+        res.json({error: "incorrect key"})
+       } 
 })
 
 

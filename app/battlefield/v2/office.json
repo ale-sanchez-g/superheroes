@@ -2,10 +2,10 @@
     {
         "id": "off_1",
         "question": "Your coworker Markus, is constantly coughing in the office, what do you do?",
-        "answer1": "Use your superhero Social Distance, notify your Manager and maintain a safe distance.",
+        "answer1": "Use your superhero Social Distance and notify your Manager.",
         "answer2": "Keep it to yourself, do not draw attention, and pretend you did not notice!",
         "solution": {
-            "correctAnswer": "Use your superhero Social Distance, notify your Manager and maintain a safe distance.",
+            "correctAnswer": "Use your superhero Social Distance and notify your Manager.",
             "score": 100
         }
     },

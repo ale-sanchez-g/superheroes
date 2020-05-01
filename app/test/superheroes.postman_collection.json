@@ -54,7 +54,7 @@
 				"method": "GET",
 				"header": [
 					{
-						"key": "Authorisation",
+						"key": "Authorization",
 						"value": "local_key",
 						"type": "text"
 					},

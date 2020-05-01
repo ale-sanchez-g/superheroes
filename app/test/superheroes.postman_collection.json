@@ -1,6 +1,6 @@
 {
 	"info": {
-		"_postman_id": "96a4fbbf-b617-4aec-af6c-ef2c7070b5dd",
+		"_postman_id": "f1cd1c43-7369-4752-bfbb-8e9a82ec60ef",
 		"name": "superheroes",
 		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
 	},
@@ -11,7 +11,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6b2e7db2-0d35-44d2-9d5a-fa4fc7c8e5a0",
+						"id": "6de23356-40f2-42d8-b4d6-2e71cf8ddfac",
 						"exec": [
 							"var jsonData = pm.response.json();",
 							"var schema = {",
@@ -54,12 +54,9 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/",
+					"raw": "{{url}}",
 					"host": [
 						"{{url}}"
-					],
-					"path": [
-						""
 					]
 				}
 			},
@@ -71,16 +68,16 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6b2e7db2-0d35-44d2-9d5a-fa4fc7c8e5a0",
+						"id": "77d8c908-031a-4c0b-ab26-ceb6d85f2363",
 						"exec": [
 							"var jsonData = pm.response.json();",
 							"    ",
 							"pm.test(\"Question data\", function () {",
-							"    pm.expect(jsonData.question).not.to.eql(\"\");",
-							"    pm.expect(jsonData.answer1).not.to.eql(\"\");",
-							"    pm.expect(jsonData.answer2).not.to.eql(\"\");",
-							"    pm.expect(jsonData.solution.correctAnswer).not.to.eql(\"\");",
-							"    pm.expect(jsonData.solution.score).to.eql(100);",
+							"    pm.expect(jsonData[0].question).not.to.eql(\"\");",
+							"    pm.expect(jsonData[0].answer1).not.to.eql(\"\");",
+							"    pm.expect(jsonData[0].answer2).not.to.eql(\"\");",
+							"    pm.expect(jsonData[0].solution.correctAnswer).not.to.eql(\"\");",
+							"    pm.expect(jsonData[0].solution.score).not.to.eql(\"\");",
 							"});",
 							"",
 							"pm.test(\"Status code is 200\", function () {",
@@ -95,11 +92,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/office",
+					"raw": "{{url}}/api/v2/office",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
+						"api",
+						"v2",
 						"office"
 					]
 				}
@@ -112,7 +111,7 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6b2e7db2-0d35-44d2-9d5a-fa4fc7c8e5a0",
+						"id": "74dfcd2e-e94e-4e20-b712-7fe8eb268e08",
 						"exec": [
 							"var jsonData = pm.response.json();",
 							"    ",
@@ -121,7 +120,7 @@
 							"    pm.expect(jsonData[0].answer1).not.to.eql(\"\");",
 							"    pm.expect(jsonData[0].answer2).not.to.eql(\"\");",
 							"    pm.expect(jsonData[0].solution.correctAnswer).not.to.eql(\"\");",
-							"    pm.expect(jsonData[0].solution.score).to.eql(100);",
+							"    pm.expect(jsonData[0].solution.score).not.to.eql(\"\");",
 							"});",
 							"",
 							"pm.test(\"Status code is 200\", function () {",
@@ -136,11 +135,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/bus",
+					"raw": "{{url}}/api/v2/bus",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
+						"api",
+						"v2",
 						"bus"
 					]
 				}
@@ -153,16 +154,16 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6b2e7db2-0d35-44d2-9d5a-fa4fc7c8e5a0",
+						"id": "995b6032-2e93-43cf-8304-1b7d70997d6d",
 						"exec": [
 							"var jsonData = pm.response.json();",
 							"    ",
 							"pm.test(\"Question data\", function () {",
-							"    pm.expect(jsonData.question).not.to.eql(\"\");",
-							"    pm.expect(jsonData.answer1).not.to.eql(\"\");",
-							"    pm.expect(jsonData.answer2).not.to.eql(\"\");",
-							"    pm.expect(jsonData.solution.correctAnswer).not.to.eql(\"\");",
-							"    pm.expect(jsonData.solution.score).to.eql(100);",
+							"    pm.expect(jsonData[0].question).not.to.eql(\"\");",
+							"    pm.expect(jsonData[0].answer1).not.to.eql(\"\");",
+							"    pm.expect(jsonData[0].answer2).not.to.eql(\"\");",
+							"    pm.expect(jsonData[0].solution.correctAnswer).not.to.eql(\"\");",
+							"    pm.expect(jsonData[0].solution.score).not.to.eql(\"\");",
 							"});",
 							"",
 							"pm.test(\"Status code is 200\", function () {",
@@ -177,11 +178,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/restaurant",
+					"raw": "{{url}}/api/v2/restaurant",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
+						"api",
+						"v2",
 						"restaurant"
 					]
 				}
@@ -194,17 +197,18 @@
 				{
 					"listen": "test",
 					"script": {
-						"id": "6b2e7db2-0d35-44d2-9d5a-fa4fc7c8e5a0",
+						"id": "0fe4c220-07ad-41a3-9797-4039a1bdd08b",
 						"exec": [
 							"var jsonData = pm.response.json();",
 							"    ",
 							"pm.test(\"Question data\", function () {",
-							"    pm.expect(jsonData.question).not.to.eql(\"\");",
-							"    pm.expect(jsonData.answer1).not.to.eql(\"\");",
-							"    pm.expect(jsonData.answer2).not.to.eql(\"\");",
-							"    pm.expect(jsonData.solution.correctAnswer).not.to.eql(\"\");",
-							"    pm.expect(jsonData.solution.score).to.eql(100);",
+							"    pm.expect(jsonData[0].question).not.to.eql(\"\");",
+							"    pm.expect(jsonData[0].answer1).not.to.eql(\"\");",
+							"    pm.expect(jsonData[0].answer2).not.to.eql(\"\");",
+							"    pm.expect(jsonData[0].solution.correctAnswer).not.to.eql(\"\");",
+							"    pm.expect(jsonData[0].solution.score).not.to.eql(\"\");",
 							"});",
+							"",
 							"",
 							"pm.test(\"Status code is 200\", function () {",
 							"    pm.response.to.have.status(200);",
@@ -218,11 +222,13 @@
 				"method": "GET",
 				"header": [],
 				"url": {
-					"raw": "{{url}}/library",
+					"raw": "{{url}}/api/v2/library",
 					"host": [
 						"{{url}}"
 					],
 					"path": [
+						"api",
+						"v2",
 						"library"
 					]
 				}

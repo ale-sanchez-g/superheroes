@@ -18,14 +18,6 @@ app.get('/', function (req, res) {
     res.send(battlefields)
 })
 
-  
-battlefields.forEach(function(battle){
-    const place = require('./battlefield/'+battle.place);
-    app.get(`/${battle.place}`, (req, res) => {
-        console.log(`Returning ${battle.place} questions`);
-        res.send(place);
-     });
-  });
 
 battlefields.forEach(function(battle){
     const place = require('./battlefield/v2/'+battle.place);

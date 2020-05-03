@@ -1,5 +1,6 @@
 const express = require('express');
 const bodyParser = require('body-parser');
+const cors = require('cors')
 
 let port = process.env.PORT || 3000;
 let key = process.env.AUTH_KEY || "local_key";
@@ -7,7 +8,7 @@ let key = process.env.AUTH_KEY || "local_key";
 
 const app = express();
 app.use(bodyParser.json());
-
+app.use(cors())
 
 const battlefields = [
         {place:"office"},

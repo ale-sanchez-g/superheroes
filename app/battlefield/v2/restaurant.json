@@ -2,8 +2,8 @@
     {
         "id": "res_1",
         "question": "You notice a large group of people waiting in line next to each other at a restaurant, what do you do?",
-        "answer1:": "Use your super hero sanitizer, keep a safe distance and advise they should keep 1.5 metres away from others.",
-        "answer2:": "move away immediately call the police!",
+        "answer1": "Use your super hero sanitizer, keep a safe distance and advise they should keep 1.5 metres away from others.",
+        "answer2": "move away immediately call the police!",
         "solution": {
             "correctAnswer": "Use your super hero sanitizer, keep a safe distance and advise they should keep 1.5 metres away from others.",
             "score": 100

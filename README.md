@@ -18,6 +18,36 @@ Example:
 - npm install
 - PORT:3000 npm start
 
-## Test
+## Tests
 
 - npm test
+
+## MIGRATION PLAN
+
+```
+This will be moved to Hasura Covid Logic. This repo will be used for codifying the testing and deployment of the app.
+```
+### Pre-requisites
+
+- Mac or Linux OS
+- Latest installation of docker
+- Internet access
+s
+### Docker capabilities
+
+- docker-compose to have infrastructure similar to heroku infrastructure.
+    - Postgress DB and Hasura with a password
+    - Create relevant tables
+    - Load test content
+
+- Run the below command to set up your local test infrastructure
+```sh
+cd infra/test
+sh setup.sh
+```    
+- to teardown the infra run the below (Delete containers and volumes)
+```
+cd infra/test
+sh teardown.sh
+```
+<!-- https://hasura.io/docs/latest/graphql/core/guides/postgres/import-data-from-csv.html -->

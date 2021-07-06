@@ -51,3 +51,17 @@ cd infra/test
 sh teardown.sh
 ```
 <!-- https://hasura.io/docs/latest/graphql/core/guides/postgres/import-data-from-csv.html -->
+
+### Example call to get Questions
+
+```
+query getQuestion {
+  questions(where: {id: {_eq: "bus_1"}}) {
+    answer1
+    answer2
+    correctanswer
+    question
+    score
+  }
+}
+```
